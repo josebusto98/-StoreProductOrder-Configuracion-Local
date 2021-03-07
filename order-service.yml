@@ -4,7 +4,7 @@ server:
 eureka:         #tells about the Eureka server details and its refresh time
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://service-discovery:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:9003/eureka}
     healthcheck:
       enabled: true
 
@@ -13,5 +13,5 @@ spring:
     name: order-service   #current service name to be used by the eureka server
   data:
     mongodb:
-      database: order-service_db
+      database: order-service_db-BCJA
       port: 27017
