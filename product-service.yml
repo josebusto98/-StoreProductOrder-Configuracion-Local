@@ -3,11 +3,10 @@ server:
 
 eureka:         #tells about the Eureka server details and its refresh time
  client:
-   serviceUrl:
-     #defaultZone: ${EUREKA_URI:http://service-discovery:8761/eureka}
-     defaultZone: ${EUREKA_URI:http://localhost:9003/eureka}
-     healthcheck:
-       enabled: true
+  serviceUrl:
+   defaultZone: ${EUREKA_URI:http://localhost:9003/eureka}
+   healthcheck:
+    enabled: true
 
 spring:
  application:
