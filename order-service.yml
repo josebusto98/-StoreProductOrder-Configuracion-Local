@@ -2,11 +2,11 @@ server:
   port: 9001    #service port
 
 eureka:         #tells about the Eureka server details and its refresh time
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:9003/eureka}
-    healthcheck:
-      enabled: true
+ client:
+  serviceUrl:
+   defaultZone: ${EUREKA_URI:http://localhost:9003/eureka}
+   healthcheck:
+    enabled: true
 
 spring:
   application:
